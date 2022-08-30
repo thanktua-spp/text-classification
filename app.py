@@ -61,7 +61,7 @@ gr.Interface(classify_sentiments,
             article = article,
             allow_flagging = "never",
             live = False,
-            examples=["This has to be the best Introductory course to machine learning",
+            examples=["This has to be the best Introductory course in machine learning",
             "I consider this training an absolute waste of time."]
              ).launch()
 

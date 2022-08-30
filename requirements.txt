@@ -1,4 +1,9 @@
 scipy
 gradio
 numpy
+<<<<<<< HEAD
 transformers
+torch 
+=======
+transformers
+>>>>>>> 23c0c807c5261f6028477b390e37195da8b50fbb

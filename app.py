@@ -43,5 +43,25 @@ def classify_sentiments(text):
 
 
 #build the Gradio app
-gr.Interface(classify_sentiments, 'text', 'label').launch()
+Instructuction = "Write an imaginary review about a product or service you might be interested in."
+title="Text Sentiment analysis"
+description = """Write a Good or Bad reviews of a products or services,\
+   the machine learning model is able to predict the text sentiment"""
+article = """
+            - Click submit button to test sentiment analysis prediction
+            - Click clear button to refresh text
+           """
+
+gr.Interface(classify_sentiments,
+            'text',
+            'label',
+            title = title,
+            description = description,
+            Instruction = Instructuction,
+            article = article,
+            allow_flagging = "never",
+            live = False,
+            examples=["This has to be the best Introductory course to machine learning",
+            "I consider this training an absolute waste of time."]
+             ).launch()
 
